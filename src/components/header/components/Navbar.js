@@ -1,7 +1,6 @@
 import { Navbar, Nav } from "react-bootstrap/";
 export default function NavbarComponent() {
   const handleNav = (e) => {
-    console.log(e.target);
     let element = document.getElementById(e.target.name).offsetTop;
     element = element - element * 0.05;
     window.scrollTo({ top: element, behavior: "smooth" });
