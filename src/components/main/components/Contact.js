@@ -29,7 +29,11 @@ export default function Contact() {
             <img src={Gmail} alt="Gmail" />
             <h4>santiuriguen@gmail.com</h4>
           </div>
-          <a href=" https://wa.me/5492615431092" target="_blanck">
+          <a
+            href=" https://wa.me/5492615431092"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img src={Whatsapp} alt="Whatsapp" />
           </a>
         </Col>

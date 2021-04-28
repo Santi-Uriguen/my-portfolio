@@ -18,10 +18,18 @@ export default function About() {
         </p>
       </Col>
       <Col className="icons">
-        <a href="www.linkedin.com/in/santiago-uriguen">
+        <a
+          href="https://www.linkedin.com/in/santiago-uriguen"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={Linkedin} alt="LinkedIn logo" />
         </a>
-        <a href="https://github.com/Santi-Uriguen">
+        <a
+          href="https://github.com/Santi-Uriguen"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={Github} alt="Github logo" />
         </a>
       </Col>

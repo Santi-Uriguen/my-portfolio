@@ -1,3 +1,27 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #343a40;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #24282c;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.App header .navbar .navbar-brand a {
+  color: white;
+  font-size: 1.5rem;
+}
+
 .App header .container-fluid {
   padding: 0;
 }
@@ -169,8 +193,8 @@
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item {
   width: 60%;
   background-color: #24282c;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(0);
+          transform: scale(0);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -228,6 +252,13 @@
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item a p {
   color: rgba(255, 255, 255, 0.7);
+}
+
+.App main .container-fluid .container-fluid .proyects .col .list-group .show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .App main .container-fluid .Contact {

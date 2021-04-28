@@ -22,17 +22,34 @@ import AV1 from "../../../assets/av1.png";
 import AV2 from "../../../assets/av2.png";
 import AV3 from "../../../assets/av3.png";
 
+
 export default function Proyects() {
+  window.addEventListener("scroll", () => {
+    const elements = document.querySelectorAll(".proyectCard");
+    for (let i = 0; i < elements.length; i++) {
+      const individualElement = elements[i];
+      const elementHeight = individualElement.getBoundingClientRect().top;
+      const windowBottom = window.innerHeight;
+      const windowTop = window.innerHeight * -0.65;
+      if (elementHeight <= windowBottom && elementHeight > windowTop) {
+        individualElement.className = "proyectCard list-group-item show";
+      } else {
+        individualElement.className = "proyectCard list-group-item";
+      }
+    }
+  });
+
   return (
     <Container fluid id="proyects">
       <Row className="proyects">
         <Col>
           <h2>Proyectos</h2>
           <ListGroup horizontal>
-            <ListGroup.Item>
+            <ListGroup.Item className="proyectCard">
               <a
                 href="https://santi-uriguen.github.io/store-uriguen-santiago/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Carousel>
                   <Carousel.Item>
@@ -51,10 +68,11 @@ export default function Proyects() {
                 </p>
               </a>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item className="proyectCard">
               <a
                 href="https://santi-uriguen.github.io/Proyecto-Gifos/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Carousel>
                   <Carousel.Item>
@@ -74,7 +92,7 @@ export default function Proyects() {
                 </p>
               </a>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item className="proyectCard">
               <a href="https://ry4e9.csb.app/" target="_blank" rel="noreferrer">
                 <Image src={Reserva} alt="Reserva" />
                 <h4>Reserva de alojamientos</h4>
@@ -86,8 +104,12 @@ export default function Proyects() {
                 </p>
               </a>
             </ListGroup.Item>
-            <ListGroup.Item>
-              <a href="http://mauricioruizvial.com/#/home" target="_blank" rel="noreferrer">
+            <ListGroup.Item className="proyectCard">
+              <a
+                href="http://mauricioruizvial.com/#/home"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <Carousel>
                   <Carousel.Item>
                     <img src={Mauricio1} alt="Mauricio Ruiz" />
@@ -106,10 +128,11 @@ export default function Proyects() {
                 </p>
               </a>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item className="proyectCard">
               <a
                 href="https://santi-uriguen.github.io/AVRegionales/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Carousel>
                   <Carousel.Item>
@@ -131,10 +154,11 @@ export default function Proyects() {
                 </p>
               </a>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item className="proyectCard">
               <a
                 href="https://santi-uriguen.github.io/Podcast-Channel/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Carousel>
                   <Carousel.Item>
@@ -153,27 +177,15 @@ export default function Proyects() {
                 </p>
               </a>
             </ListGroup.Item>
-            <ListGroup.Item>
+            <ListGroup.Item className="proyectCard">
               <a
                 href="https://santi-uriguen.github.io/Tabla-Periodica/"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
                 <Image src={Periodic} />
                 <h4>Tabla Periódica</h4>
                 <p>Tabla periódica interactiva online</p>
-              </a>
-            </ListGroup.Item>
-            <ListGroup.Item>
-              <a
-                href="https://santi-uriguen.github.io/pagina-feli/"
-                target="_blank" rel="noreferrer"
-              >
-                <Image src={feli} />
-                <h4>Proyecto Final</h4>
-                <p>
-                  Trabajo final para estudiante de primer año de diseño gráfico.
-                  <br />Mi primer página web publicada oficialmente
-                </p>
               </a>
             </ListGroup.Item>
           </ListGroup>
