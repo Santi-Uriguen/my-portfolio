@@ -6,7 +6,6 @@ import {
   Image,
   Carousel,
 } from "react-bootstrap";
-import feli from "../../../assets/feli.png";
 import Gifos from "../../../assets/gifos1.png";
 import Gifos2 from "../../../assets/gifos 2.png";
 import Mauricio1 from "../../../assets/mauricio1.png";
@@ -21,7 +20,6 @@ import Rewards2 from "../../../assets/rewards2.png";
 import AV1 from "../../../assets/av1.png";
 import AV2 from "../../../assets/av2.png";
 import AV3 from "../../../assets/av3.png";
-
 
 export default function Proyects() {
   window.addEventListener("scroll", () => {

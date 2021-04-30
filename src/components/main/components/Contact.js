@@ -1,27 +1,84 @@
-import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import { Container, Form, Row, Col } from "react-bootstrap";
 import Gmail from "../../../assets/gmail.svg";
 import Whatsapp from "../../../assets/whatsapp.svg";
+import { useState } from "react";
+
 export default function Contact() {
+  const [state, setState] = useState({
+    nombre: "",
+    email: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setState((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+  const handleSubmit = (event) => {
+    const templateId = "template_tphavaf";
+    sendFeedback(templateId, {
+      message: state.message,
+      from_name: state.nombre,
+      reply_to: state.email,
+    });
+  };
+  const sendFeedback = (templateId, variables) => {
+    window.emailjs
+      .send("service_v1kasql", templateId, variables)
+      .then(() => {
+        alert("Email enviado satisfactoriamente!");
+      })
+      .catch((err) => {
+        console.error(
+          "Oh well, you failed. Here some thoughts on the error that occured:",
+          err
+        );
+        alert("Ha ocurrido un error inesperado al enviar el mail");
+      });
+  };
   return (
-    <Container fluid className="Contact" id="Contact">
+    <Container fluid className="Contact formSection" id="Contact">
       <Row>
         <Col>
           <Form className="Form">
             <h2>Contactame!</h2>
             <Form.Row className="inputs">
               <Form.Group as={Col} controlId="formGridEmail">
-                <Form.Control type="email" placeholder="Email..." />
+                <Form.Control
+                  type="email"
+                  placeholder="Email..."
+                  required
+                  name="email"
+                  onChange={handleChange}
+                />
               </Form.Group>
               <Form.Group as={Col} controlId="formGridPassword">
-                <Form.Control type="text" placeholder="Nombre..." />
+                <Form.Control
+                  type="text"
+                  placeholder="Nombre..."
+                  name="nombre"
+                  onChange={handleChange}
+                  required
+                />
               </Form.Group>
             </Form.Row>
             <Form.Row className="textarea">
-              <textarea placeholder="Escribir mensaje..."></textarea>
+              <textarea
+                type="text"
+                className="textarea form-control"
+                id="textarea"
+                required
+                name="message"
+                onChange={handleChange}
+              />
             </Form.Row>
-            <Button variant="secondary" type="submit">
-              Enviar
-            </Button>
+            <input
+              type="button"
+              value="Enviar"
+              onClick={handleSubmit}
+              className="btn sendBtnShow btn-primary"
+            ></input>
           </Form>
         </Col>
         <Col className="datos">
