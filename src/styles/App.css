@@ -197,6 +197,7 @@
           transform: scale(0);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  border-radius: 10px;
 }
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item:hover {
@@ -213,6 +214,7 @@
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item a .carousel {
   width: 100%;
+  border-radius: 2%;
 }
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item a .carousel .carousel-indicators {
@@ -222,6 +224,7 @@
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item a .carousel .carousel-inner {
   width: 100%;
+  border-radius: 2%;
 }
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item a .carousel .carousel-control-next-icon {
@@ -242,6 +245,7 @@
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item a img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .App main .container-fluid .container-fluid .proyects .col .list-group .list-group-item a h4 {
@@ -335,10 +339,6 @@
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-}
-
-.App main .container-fluid .Contact .row .datos a h4 {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .App main .container-fluid .Contact .row .datos a img {
