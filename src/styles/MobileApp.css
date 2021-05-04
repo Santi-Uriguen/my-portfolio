@@ -31,7 +31,7 @@
   }
   .App main .container-fluid .about .col p {
     font-size: 3.5vw;
-    text-align: justify;
+    text-align: left;
   }
   .App main .container-fluid .about .icons {
     width: 40vw;

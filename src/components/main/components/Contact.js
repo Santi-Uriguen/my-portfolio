@@ -70,6 +70,7 @@ export default function Contact() {
                 id="textarea"
                 required
                 name="message"
+                placeholder="Ingresar mensaje..."
                 onChange={handleChange}
               />
             </Form.Row>
