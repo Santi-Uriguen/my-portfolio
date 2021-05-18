@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.5ff113ae.chunk.css",
-    "main.js": "/my-portfolio/static/js/main.deb79530.chunk.js",
-    "main.js.map": "/my-portfolio/static/js/main.deb79530.chunk.js.map",
+    "main.css": "/my-portfolio/static/css/main.57de6fd0.chunk.css",
+    "main.js": "/my-portfolio/static/js/main.064df866.chunk.js",
+    "main.js.map": "/my-portfolio/static/js/main.064df866.chunk.js.map",
     "runtime-main.js": "/my-portfolio/static/js/runtime-main.6ad5f9c6.js",
     "runtime-main.js.map": "/my-portfolio/static/js/runtime-main.6ad5f9c6.js.map",
-    "static/js/2.3fac8589.chunk.js": "/my-portfolio/static/js/2.3fac8589.chunk.js",
-    "static/js/2.3fac8589.chunk.js.map": "/my-portfolio/static/js/2.3fac8589.chunk.js.map",
+    "static/js/2.167d7a27.chunk.js": "/my-portfolio/static/js/2.167d7a27.chunk.js",
+    "static/js/2.167d7a27.chunk.js.map": "/my-portfolio/static/js/2.167d7a27.chunk.js.map",
     "index.html": "/my-portfolio/index.html",
-    "static/css/main.5ff113ae.chunk.css.map": "/my-portfolio/static/css/main.5ff113ae.chunk.css.map",
-    "static/js/2.3fac8589.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.3fac8589.chunk.js.LICENSE.txt",
+    "static/css/main.57de6fd0.chunk.css.map": "/my-portfolio/static/css/main.57de6fd0.chunk.css.map",
+    "static/js/2.167d7a27.chunk.js.LICENSE.txt": "/my-portfolio/static/js/2.167d7a27.chunk.js.LICENSE.txt",
     "static/media/Rewards store.38754f3e.png": "/my-portfolio/static/media/Rewards store.38754f3e.png",
     "static/media/av1.48bd8b4f.png": "/my-portfolio/static/media/av1.48bd8b4f.png",
     "static/media/av2.85866acd.png": "/my-portfolio/static/media/av2.85866acd.png",
@@ -34,13 +34,13 @@
     "static/media/react.0f1447de.svg": "/my-portfolio/static/media/react.0f1447de.svg",
     "static/media/reserva.6b173d0c.png": "/my-portfolio/static/media/reserva.6b173d0c.png",
     "static/media/rewards2.f1debb0f.png": "/my-portfolio/static/media/rewards2.f1debb0f.png",
-    "static/media/sass.8351205a.svg": "/my-portfolio/static/media/sass.8351205a.svg",
+    "static/media/sass.3572f53e.svg": "/my-portfolio/static/media/sass.3572f53e.svg",
     "static/media/whatsapp.b71c3a69.svg": "/my-portfolio/static/media/whatsapp.b71c3a69.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.6ad5f9c6.js",
-    "static/js/2.3fac8589.chunk.js",
-    "static/css/main.5ff113ae.chunk.css",
-    "static/js/main.deb79530.chunk.js"
+    "static/js/2.167d7a27.chunk.js",
+    "static/css/main.57de6fd0.chunk.css",
+    "static/js/main.064df866.chunk.js"
   ]
 }
