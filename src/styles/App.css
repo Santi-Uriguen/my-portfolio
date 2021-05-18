@@ -38,14 +38,22 @@
   text-align: center;
 }
 
+.App header .container-fluid .card .card-img-overlay .loading {
+  color: rgba(255, 255, 255, 0);
+}
+
 .App header .container-fluid .card .card-img-overlay h1 {
   font-weight: bold;
   font-size: 4vw;
+  -webkit-transition: all 0.75s linear;
+  transition: all 0.75s linear;
 }
 
 .App header .container-fluid .card .card-img-overlay p {
   font-weight: bold;
   font-size: 1.5vw;
+  -webkit-transition: all 0.75s linear;
+  transition: all 0.75s linear;
 }
 
 .App main {
