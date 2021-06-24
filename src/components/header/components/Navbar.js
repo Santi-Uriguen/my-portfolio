@@ -8,7 +8,9 @@ export default function NavbarComponent() {
   return (
     <Navbar expand="lg" fixed="top" bg="dark" variant="dark">
       <Navbar.Brand>
-        <Nav.Link name="App" onClick={handleNav}>Mi portfolio</Nav.Link>
+        <Nav.Link name="App" onClick={handleNav}>
+          Mi portfolio
+        </Nav.Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" bg="dark" />
       <Navbar.Collapse id="basic-navbar-nav">
