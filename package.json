@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Santi-Uriguen.github.io/my-portfolio",
+  "homepage": "https://santiuriguen.vercel.app/",
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -21,7 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
