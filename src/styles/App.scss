@@ -84,6 +84,59 @@
               width: 75%;
             }
           }
+          .cvContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 25%;
+            .imgShow {
+              width: 11.5vw;
+              cursor: pointer;
+              transform: scaleX(1);
+              transform-origin: center;
+              transition: transform 0.2s ease-in;
+            }
+            .imgClicked {
+              width: 11.5vw;
+              cursor: pointer;
+              transform: scaleX(0);
+              transform-origin: center;
+              transition: transform 0.2s ease-in;
+            }
+            .language {
+              background-color: white;
+              border-radius: 10px;
+              width: 80%;
+              height: 11.5vw;
+              margin-top: -100%;
+              .int {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border: 7px solid #8fddc1;
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                a {
+                  img {
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            .hidden {
+              transform: scaleX(0);
+              transform-origin: center;
+              transition: all 0.2s ease-out;
+            }
+            .show {
+              transform: scaleX(1);
+              transform-origin: center;
+              transition: all 0.2s ease-out;
+            }
+          }
         }
       }
       .tech {

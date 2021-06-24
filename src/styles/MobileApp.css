@@ -22,7 +22,7 @@
     margin-top: 90%;
   }
   .App main .container-fluid .about .col {
-    padding: 7% 5% 6% 5%;
+    padding: 7% 30% 6% 5%;
     width: 70vw;
   }
   .App main .container-fluid .about .col h2 {
@@ -34,21 +34,41 @@
     text-align: left;
   }
   .App main .container-fluid .about .icons {
-    width: 40vw;
+    width: 24vw;
     position: absolute;
-    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 0;
-    margin: 5% 0 0 60%;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    margin: 5% 5% 0 75%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .App main .container-fluid .about .icons a {
-    width: 25%;
-    margin-right: 20%;
+    width: 50%;
+    margin: 20% 0 20% 0;
   }
   .App main .container-fluid .about .icons a img {
     width: 100%;
+  }
+  .App main .container-fluid .about .icons .cvContainer {
+    margin-top: 25%;
+  }
+  .App main .container-fluid .about .icons .cvContainer .imgShow {
+    width: 20vw;
+  }
+  .App main .container-fluid .about .icons .cvContainer .imgClicked {
+    width: 20vw;
+  }
+  .App main .container-fluid .about .icons .cvContainer .language {
+    height: 20vw;
+    width: 16vw;
+    margin-top: -330%;
+  }
+  .App main .container-fluid .about .icons .cvContainer .language .int a {
+    margin: 7%;
   }
   .App main .container-fluid .tech .col {
     padding: 10% 5% 5% 5%;
