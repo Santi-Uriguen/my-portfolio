@@ -12,7 +12,7 @@ export default function About() {
       e.target.className = "imgClicked";
       setTimeout(() => {
         document.getElementById("language").className = "language show";
-      }, 500);
+      }, 200);
     } else {
       document.getElementById("language").className = "language hidden";
       setTimeout(() => {
