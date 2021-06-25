@@ -2,6 +2,9 @@
   .App header .navbar .navbar-brand a {
     font-size: 5.75vw;
   }
+  .App header .navbar .languageSwitch img {
+    width: 5%;
+  }
   .App header .container-fluid .card img {
     width: 200%;
     margin-left: -30%;

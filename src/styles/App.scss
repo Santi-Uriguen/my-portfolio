@@ -22,7 +22,14 @@
           font-size: 1.5rem;
         }
       }
+      .languageSwitch {
+        img {
+          width: 40%;
+          cursor: pointer;
+        }
+      }
     }
+
     .container-fluid {
       padding: 0;
       .card {
