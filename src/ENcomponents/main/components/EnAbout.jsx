@@ -26,13 +26,13 @@ export default function About() {
         <h2>About me</h2>
         <p>
           I'm a Front End Web Developer from Mendoza, Argentina, wanting to be
-          part of the world (?)
+          part of the world.
         </p>
         <p>
-          I enjoy a lot programming, creating web applications and pages. I'm
-          always expanding and putting into practing my knowledge of the IT
-          world, testing and learning new technologies and always with an active
-          and in progress proyect
+          I really enjoy programming, creating web applications and pages. I'm
+          always expanding and putting into practice my knowledge of the IT
+          world, testing and learning new technologies, always with active and
+          ongoing proyects.
         </p>
       </Col>
       <Col className="icons">
