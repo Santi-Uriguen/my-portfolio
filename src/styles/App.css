@@ -226,7 +226,7 @@
           justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start;
+          align-items: flex-end;
 }
 
 .App main .container-fluid .tech .col .list-group .list-group-item {
